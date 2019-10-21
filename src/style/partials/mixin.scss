@@ -28,9 +28,9 @@
 
 
 $breakpoints: (
-        lg: 1920,
-        md: 1024,
-        sm: 768
+        lg: 1199,
+        md: 991,
+        sm: 767
 ) !default;
 $media-direction: max !default;
 
@@ -174,11 +174,3 @@ $media-direction: max !default;
   }
 };
 
-$resolution: 1920;
-@function vw($px) {
-  @return (($px/$resolution) * 100)+vw;
-}
-$resolution2: 768;
-@function vw2($px) {
-  @return (($px/$resolution2) * 100)+vw;
-}

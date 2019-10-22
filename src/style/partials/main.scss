@@ -1,9 +1,9 @@
 $font1: 'PT Serif Pro';
 $font2: 'DejaVu Serif';
 $font3: 'Futura PT';
-$font4: 'Circe';
 $font4: 'Montserrat';
-$font4: 'Roboto';
+$font5: 'Circe';
+$font6: 'Roboto';
 
 a {
 	text-decoration: none;
@@ -54,9 +54,92 @@ img {
 	border-radius: 63% 8% 44% 10%/86% 23% 88% 24%;
 	background: #da1f8d;
 	box-shadow: 0 26px 46px rgba(0, 0, 0, 0.24), 0 3px 0 #952165;
-
-	font-family: Roboto;
+	font-family: $font6;
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	&:hover,&:focus{
+		outline: none;
+	}
+	&_color{
+		&_purple{
+			box-shadow: 0 29px 27px rgba(5, 93, 143, 0.22), 0 2px 0 rgba(104, 35, 154, 0.55), inset 0 -1px 0 rgba(0, 0, 0, 0.53), inset 0 1px 0 rgba(255, 255, 255, 0.75);
+			background-image: linear-gradient(to top, #a650e1 0%, #b362e3 100%);
+		}
+	}
+}
+
+
+.block-title{
+	color: #000000;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: $font2;
+	font-style: italic;
+	text-align: center;
+}
+.block-subtitle{
+	color: #00baff;
+	font-family: $font1;
+	font-size: 37px;
+	font-weight: 700;
+	text-align: center;
+}
+.callback-form{
+	margin: 0 auto;
+	&__input-row{
+		display: flex;
+		justify-content: center;
+		&__input{
+			width: 191px;
+			padding-bottom: 5px;
+			background: transparent;
+			border: none;
+			color: #6d90a1;
+			font-family: $font5;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			box-shadow: 0 2px 0 rgba(53, 191, 253, 0.33);
+			border-bottom: 2px solid #00a8ff;
+			transition: all 0.2s ease;
+			margin: 0 12px;
+			&::placeholder{
+				color: #6d90a1;
+				font-family: $font5;
+				font-size: 14px;
+				font-weight: 400;
+				text-align: center;
+			}
+			&:hover,&:focus{
+				outline: none;
+				color: #000000;
+				border-color: #a5e0ff;
+				&::placeholder{
+					color: #000000;
+				}
+			}
+			&:valid{
+				box-shadow: 0 2px 0 rgba(138, 169, 184, 0.33);
+				border-color: #6c90a1;
+			}
+		}
+	}
+	&__button{
+		margin: 30px auto 0;
+		width: 198px;
+	}
+	&__info{
+		margin: 25px auto 0;
+		width: 550px;
+		max-width: 100%;
+		color: #000000;
+		font-family: $font6;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+	}
 }

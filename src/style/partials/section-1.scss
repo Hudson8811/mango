@@ -1,0 +1,251 @@
+.section-1 {
+    /* background: url('../images/bg-section-1.jpg') no-repeat top left;
+    background-size: 100% auto;*/
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.section-1__content {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 162px;
+}
+
+.s1-text-1 {
+    text-shadow: -1px 3px 0 rgba(0, 0, 0, 0.15);
+    font-family: "Deja Vu Serif";
+    color: #ff781e;
+    font-size: 44px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.s1-text-2 {
+    font-family: "PT Serif Pro";
+    color: #000000;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.s1-decoration-1 {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.s1-card {
+    position: absolute;
+    box-shadow: 0 4px 8px 1px rgba(0, 103, 169, 0.18);
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 62px 34px 47px;
+    width: 408px;
+    max-width: 100%;
+    position: relative;
+    margin-top: 126px;
+
+    &__decoration-1 {
+        position: absolute;
+        bottom: -100px;
+        left: calc(100% - 67px);
+        max-width: 850px;
+    }
+
+    &__decoration-2 {
+        position: absolute;
+        bottom: -57px;
+        left: -120px;
+
+    }
+
+    &__decoration-3 {
+        position: absolute;
+        bottom: calc(100% - 10px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__decoration-4 {
+        position: absolute;
+        bottom: -225px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    &__text-1 {
+        font-family: "PT Serif Pro";
+        color: #f86660;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__text-2 {
+        font-family: "PT Serif Pro";
+        color: #000000;
+        font-size: 17px;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 46px;
+        margin-bottom: 59px;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 1850px) {
+    .s1-card__decoration-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1487px) {
+
+
+
+    .section-1-bg {
+        max-width: 100%;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        object-position: top left;
+    }
+
+    .s1-decoration-1 {
+        display: none;
+    }
+
+    .s1-card__decoration-2 {
+        bottom: -32px;
+        left: -54px;
+        width: 112px;
+    }
+
+    .s1-card__decoration-1 {
+        position: absolute;
+        bottom: -103px;
+        left: calc(100% - 67px);
+        max-width: 57vw;
+    }
+
+}
+
+@media (max-width:991px) {
+    .s1-card__decoration-1 {
+        bottom: -45px;
+        max-width: 47vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container.section-1__content {
+        max-width: 100%;
+    }
+
+    .s1-card__decoration-1 {
+        bottom: -45px;
+        left: calc(100% - 92px);
+        max-width: 524px;
+    }
+
+    .section-1__content {
+        padding-top: 100px;
+    }
+
+    .s1-text-1 {
+        font-size: 27px;
+        text-shadow: -1px 1px 0 rgba(0, 0, 0, .15);
+    }
+
+    .s1-text-2 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .s1-card__text-2 {
+        font-family: "PT Serif Pro";
+        color: #000;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .s1-card {
+        padding: 35px 20px 47px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .s1-card__decoration-1 {
+        top: calc(100% - -17px);
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 524px;
+        max-width: 100%;
+    }
+
+    .s1-text-1,
+    .s1-text-2 {
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    .s1-card {
+
+        margin-top: 83px;
+        padding-bottom: 24px;
+
+        &__text-1 {
+            font-size: 14px;
+        }
+
+        &__text-2 {
+            font-size: 14px;
+            margin-top: 12px;
+            margin-bottom: 22px;
+        }
+
+        &__decoration-3 {
+            width: 160px;
+        }
+
+
+
+
+        &__decoration-2 {
+            display: none;
+        }
+
+    }
+
+    .s1-text-1 {
+        font-size: 22px;
+    }
+
+    .s1-text-2 {
+        font-size: 16px;
+    }
+
+
+
+}

@@ -1,0 +1,90 @@
+.site-header {
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1199px;
+    width: calc(100% - 30px);
+}
+
+.sh-logo {
+    display: block;
+    width: 191px;
+
+    img {}
+
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+}
+
+.sh-menu {
+    margin: 0 7.5px;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "Портфолио" */
+
+    display: flex;
+    align-items: center;
+
+    &__link {
+        &:hover {
+            color: #da1f8d;
+        }
+
+        &:active {}
+
+        &:focus {}
+    }
+}
+
+.sh-contacts {
+    &__left {}
+
+    &__right {
+        .btn {}
+    }
+}
+
+.shc-work-time {
+
+    font-family: Montserrat;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.shc-work-phone {
+    font-family: "Montserrat - Semi Bold";
+    color: #000000;
+    font-size: 26px;
+    font-weight: 400;
+
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+}
+
+.container {
+    width: 320px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+
+    @media screen and (min-width:768px) and (max-width:991) {
+        width: 720px;
+    }
+
+    @media screen and (min-width:992px) and (max-width:1199) {
+        width: 960px;
+    }
+
+    @media screen and (min-width:1200) {
+        width: 1140px;
+    }
+}

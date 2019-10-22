@@ -5,7 +5,7 @@ $font4: 'Circe';
 $font4: 'Montserrat';
 $font4: 'Roboto';
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -14,7 +14,7 @@ html {
 	line-height: 1.2;
 }
 
-body{
+body {
 	margin: 0;
 	font-size: 1rem;
 	color: #000000;
@@ -37,5 +37,26 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 1170px;
-	@include media(( max-width: (lg:960px,md:720px,sm:320px) ));
+	@include media((max-width: (lg:960px, md:720px, sm:320px)));
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 179px;
+	height: 51px;
+	border-radius: 63% 8% 44% 10%/86% 23% 88% 24%;
+	background: #da1f8d;
+	box-shadow: 0 26px 46px rgba(0, 0, 0, 0.24), 0 3px 0 #952165;
+
+	font-family: Roboto;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
 }

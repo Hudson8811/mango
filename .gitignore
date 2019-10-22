@@ -99,3 +99,9 @@ public
 
 # TernJS port file
 .tern-port
+.idea/mango.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/webResources.xml
+.idea/workspace.xml

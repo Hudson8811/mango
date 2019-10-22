@@ -1,0 +1,124 @@
+.section-2 {
+    text-align: center;
+
+    &__text-1 {
+        font-family: "Deja Vu Serif";
+        color: #2f313f;
+        font-size: 44px;
+        font-style: italic;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+
+    &__text-2 {
+        font-family: "Deja Vu Serif";
+        color: #000000;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+
+}
+
+.s2-fb {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--tc-gren {
+        color: #00a413;
+    }
+
+    &--tc-blue {
+        color: #00a7ff;
+    }
+
+    &__title {
+        font-family: "Deja Vu Serif";
+        color: #2f313f;
+        font-size: 33px;
+        font-weight: 700;
+    }
+
+    &__old-price {
+        font-family: "Deja Vu Serif";
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: line-through;
+        margin-top: 43px;
+    }
+
+    &__new-pice {
+        font-family: "Deja Vu Serif";
+        font-size: 46px;
+        font-weight: 700;
+    }
+
+    &__left {}
+
+    &__center {
+        img {}
+    }
+
+    &__left,
+    &__right {
+        padding-top: 50px;
+    }
+
+    &__right {
+
+        .s2-fb__old-price {}
+
+        .s2-fb__new-pice {}
+    }
+}
+
+
+@media (max-width:767px) {
+    .section-2__text-1 {
+
+        font-size: 27px;
+    }
+
+    .section-2__text-2 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .s2-fb {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+
+        &__right {
+            order: -1;
+            padding-top: 20px;
+        }
+
+        &__left {
+            order: -2;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__old-price {
+            font-size: 23px;
+            margin-top: 20px;
+        }
+
+        &__new-pice {
+            font-size: 36px;
+        }
+
+        &__center {
+            margin-top: 10px;
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+}

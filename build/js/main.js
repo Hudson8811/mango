@@ -34,13 +34,13 @@ $(window).resize(function () {
 
 });
 
-var $header = $('#masthead');
+var header = $('#masthead');
 $(window).scroll(function () {
     if ($(document).scrollTop() == 0) {
-        header.removeClass('site-header--active');
+        header.removeClass('site-header--scrolled');
     }
     else {
-        header.addClass('site-header--active');
+        header.addClass('site-header--scrolled');
     }
 });
 

@@ -1,0 +1,103 @@
+.section-9{
+  padding-top: 105px;
+  padding-bottom: 145px;
+  background: url("../images/bg-section-9.jpg") center bottom no-repeat;
+}
+
+
+.organizers{
+  margin-top: 240px;
+  .block-title{
+    margin-bottom: 65px;
+  }
+  &__item{
+    display: flex;
+    justify-content: flex-start;
+    &+&{
+      margin-top: 12px;
+    }
+    &:nth-child(odd){
+      justify-content: flex-end;
+    }
+    &:nth-child(3){
+      .organizers__item__content{
+        &::before{
+          content: "";
+          display: block;
+          width: 414px;
+          height: 92px;
+          position: absolute;
+          left: -457px;
+          top: -11px;
+          background: url("../images/bg-org1.png") center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    &:nth-child(4){
+      .organizers__item__content{
+        &::before{
+          content: "";
+          display: block;
+          width: 280px;
+          height: 46px;
+          position: absolute;
+          left: 243px;
+          top: -81px;
+          background: url("../images/bg-org-2.png") center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    &:nth-child(5){
+      .organizers__item__content{
+        &::before{
+          content: "";
+          display: block;
+          width: 409px;
+          height: 127px;
+          position: absolute;
+          left: -448px;
+          top: -9px;
+          background: url("../images/bg-org-3.png") center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    &__content{
+      display: flex;
+      align-items: center;
+      width: 585px;
+      position: relative;
+      &__img{
+        display: block;
+        width: 163px;
+        min-width: 163px;
+      }
+      &__info{
+        margin-left: 28px;
+        &__name{
+          color: #000000;
+          font-family: $font2;
+          font-size: 16px;
+          font-weight: 700;
+          font-style: italic;
+        }
+        &__role{
+          color: #000000;
+          font-family: $font2;
+          font-size: 14px;
+          font-style: italic;
+          margin-top: 6px;
+        }
+        &__text{
+          color: #000000;
+          font-family: $font2;
+          font-size: 14px;
+          font-style: italic;
+          margin-top: 23px;
+        }
+      }
+    }
+  }
+}

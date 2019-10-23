@@ -2,6 +2,10 @@
   padding-top: 105px;
   padding-bottom: 145px;
   background: url("../images/bg-section-9.jpg") center bottom no-repeat;
+  @include media((
+          padding-top: (lg:95px),
+          padding-bottom: (lg:105px)
+  ));
 }
 
 .portfolio{
@@ -33,6 +37,9 @@
 
 .organizers{
   margin-top: 240px;
+  @include media((
+          margin-top: (lg:130px),
+  ));
   &__block-title{
     margin-bottom: 65px;
   }
@@ -57,6 +64,12 @@
           top: -11px;
           background: url("../images/bg-org1.png") center center no-repeat;
           background-size: contain;
+          @include media((
+                  width: (lg:294px),
+                  height: (lg:68px),
+                  left: (lg:-307px),
+                  top: (lg:-12px),
+          ));
         }
       }
     }
@@ -72,6 +85,12 @@
           top: -81px;
           background: url("../images/bg-org-2.png") center center no-repeat;
           background-size: contain;
+          @include media((
+                  width: (lg:230px),
+                  height: (lg:39px),
+                  left: (lg:93px),
+                  top: (lg:-67px),
+          ));
         }
       }
     }
@@ -87,6 +106,12 @@
           top: -9px;
           background: url("../images/bg-org-3.png") center center no-repeat;
           background-size: contain;
+          @include media((
+                  width: (lg:299px),
+                  height: (lg:94px),
+                  left: (lg:-308px),
+                  top: (lg:-9px),
+          ));
         }
       }
     }

@@ -5,6 +5,10 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  @include media((
+          padding-top: (lg:120px),
+          padding-bottom: (lg:140px)
+  ));
 }
 
 .item-why{
@@ -84,6 +88,7 @@
     &_type{
       &_big{
         width: 975px;
+        max-width: 100%;
         margin: 0 auto;
         .why__item-why{
           width: 375px;
@@ -92,8 +97,13 @@
       &_small{
         margin-top: 60px;
         position: relative;
+        @include media((justify-content: (lg:space-around)));
         .why__item-why{
           width: 235px;
+          @include media((
+                  width: (lg:320px),
+                  margin-bottom: (lg:20px)
+          ));
         }
         &::before{
           content: "";
@@ -107,6 +117,10 @@
           display: block;
           background: url("../images/bg-why.png") center center no-repeat;
           background-size: contain;
+          @include media((
+                  top: (lg:-145px),
+                  margin-left: (lg:-1080px)
+          ));
         }
       }
     }

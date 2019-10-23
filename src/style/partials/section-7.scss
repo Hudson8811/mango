@@ -17,6 +17,7 @@
     position: relative;
     margin-bottom: 2px;
     width: 39%;
+    @include media((height: (lg:300px, md:250px, sm:200px)));
     &::before{
       content: "";
       width: 100%;

@@ -4,6 +4,29 @@
   background: url("../images/bg-section-9.jpg") center bottom no-repeat;
 }
 
+.portfolio{
+  &__info{
+    margin-top: 53px;
+    &__title{
+      color: #000000;
+      font-family: $font2;
+      font-size: 26px;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+    }
+    &__text{
+      width: 975px;
+      max-width: 100%;
+      margin: 16px auto 0;
+      color: #000000;
+      font-family: $font2;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
 
 .organizers{
   margin-top: 240px;

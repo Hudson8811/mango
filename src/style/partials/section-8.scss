@@ -1,10 +1,14 @@
-.section-9{
-  padding-top: 180px;
-  padding-bottom: 200px;
+.section-8{
+  padding-top: 184px;
+  padding-bottom: 203px;
   background: url("../images/bg-section-8.jpg") center bottom no-repeat;
   overflow: hidden;
   position: relative;
   z-index: 1;
+  @include media((
+          padding-top: (lg:120px,md:100px,sm:50px),
+          padding-bottom: (lg:140px,md:80px,sm:40px)
+  ));
 }
 
 .item-why{
@@ -33,15 +37,26 @@
   &_type{
     &_big{
       .item-why__img{
-        height: 206px;
+        height: 229px;
+        @include media((
+                height: (md:160px),
+        ));
       }
       .item-why__label{
         font-size: 22px;
-        margin-top: 9px;
+        margin-top: -19px;
+        @include media((
+                font-size: (md:16px),
+                margin-top: (md:1px),
+        ));
       }
       .item-why__text{
         font-size: 18px;
         margin-top: 20px;
+        @include media((
+                font-size: (md:14px),
+                margin-top: (md:17px),
+        ));
       }
     }
     &_small{
@@ -50,7 +65,7 @@
       }
       .item-why__label{
         font-size: 16px;
-        margin-top: 9px;
+        margin-top: 1px;
       }
       .item-why__text{
         font-size: 14px;
@@ -74,7 +89,7 @@
     background-size: contain;
   }
   &__block-title{
-    margin-bottom: 85px;
+    margin-bottom: 98px;
   }
   &__row{
     display: flex;
@@ -84,16 +99,30 @@
     &_type{
       &_big{
         width: 975px;
+        max-width: 100%;
         margin: 0 auto;
+        @include media((justify-content: (md:space-around)));
         .why__item-why{
           width: 375px;
+          @include media((
+                  width: (md:320px),
+                  margin-bottom: (md:20px)
+          ));
         }
       }
       &_small{
-        margin-top: 60px;
+        margin-top: 65px;
         position: relative;
+        @include media((
+                justify-content: (lg:space-around),
+                margin-top: (md:0),
+        ));
         .why__item-why{
           width: 235px;
+          @include media((
+                  width: (lg:320px),
+                  margin-bottom: (lg:20px)
+          ));
         }
         &::before{
           content: "";
@@ -107,6 +136,11 @@
           display: block;
           background: url("../images/bg-why.png") center center no-repeat;
           background-size: contain;
+          @include media((
+                  top: (lg:-145px),
+                  margin-left: (lg:-1080px),
+                  display: (md:none),
+          ));
         }
       }
     }

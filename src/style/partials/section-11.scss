@@ -1,12 +1,19 @@
 .section-11{
-  padding-top: 46px;
+  padding-top: 48px;
   padding-bottom: 78px;
   background: url("../images/bg-section-11.jpg") center bottom no-repeat;
+  overflow: hidden;
+  @include media((
+          padding-bottom: (sm:48px),
+  ));
 }
 
 .reviews{
   &__block-title{
     margin-bottom: 60px;
+    @include media((
+            margin-bottom: (sm:30px),
+    ));
   }
   &__grid{
     display: flex;
@@ -20,6 +27,10 @@
     padding-right: 15px;
     padding-left: 15px;
     margin-bottom: 30px;
+    @include media((
+            flex: (lg:0 0 33.333333%,md:0 0 50%,sm:0 0 100%),
+            max-width: (lg:33.333333%,md:50%,sm:100%),
+    ));
   }
   &__container{
     box-shadow: 0 0 21px 1px rgba(123, 134, 138, 0.21);
@@ -111,23 +122,29 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
       }
     }
+    &:hover{
+      span{
+        color: #4f6674;
+      }
+    }
   }
 }
 
 
 .consultation{
   padding-bottom: 251px;
+  @include media((
+          padding-bottom: (lg:223px,md:170px,sm:0),
+  ));
   &__main-block{
-    padding: 50px 20px 60px;
+    padding: 47px 20px 68px;
     position: relative;
     box-shadow: 0 9px 60px 2px rgba(0, 138, 190, 0.17);
     border-radius: 4px;
     background-color: #ffffff;
-    &__block-title{
-      margin-bottom: 10px;
-    }
-    &__block-subtitle{
-    }
+    @include media((
+            padding: (md: 30px 20px 40px),
+    ));
     &::before{
       content: "";
       display: block;
@@ -137,12 +154,24 @@
       right: -66px;
       bottom: -251px;
       background: url("../images/bg-question.png") center center no-repeat;
-      background-size: 100% 100%;
+      background-size: 100% auto;
       pointer-events: none;
+      @include media((
+              width: (lg:945px,md:715px),
+              height: (lg:602px,md:455px),
+              right: (lg:-57px,md:-40px),
+              bottom: (lg:-222px,md:-170px),
+              display: (sm:none),
+      ));
     }
   }
+  &__block-title{
+    margin-bottom: 12px;
+  }
+  &__block-subtitle{
+  }
   &__callback-form{
-    margin-top: 30px;
+    margin-top: 33px;
   }
   &__image-1{
     display: block;
@@ -150,6 +179,10 @@
     left: 0;
     bottom: 0;
     z-index: 1;
+    @include media((
+            width: (lg:230px,md:160px),
+            display: (sm:none),
+    ));
   }
   &__image-2{
     display: block;
@@ -157,5 +190,9 @@
     right: 0;
     bottom: 0;
     z-index: 1;
+    @include media((
+            width: (lg:210px,md:150px),
+            display: (sm:none),
+    ));
   }
 }

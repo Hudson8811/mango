@@ -96,6 +96,9 @@ img {
 	font-family: $font2;
 	font-style: italic;
 	text-align: center;
+	@include media((
+			font-size: (md:30px,sm:20px),
+	));
 }
 
 .block-subtitle {
@@ -104,6 +107,9 @@ img {
 	font-size: 37px;
 	font-weight: 700;
 	text-align: center;
+	@include media((
+			font-size: (md:29px,sm:19px),
+	));
 }
 
 .callback-form {
@@ -112,6 +118,10 @@ img {
 	&__input-row {
 		display: flex;
 		justify-content: center;
+		@include media((
+				flex-direction: (sm: column),
+				align-items: (sm: center),
+		));
 	}
 
 	&__input {
@@ -128,8 +138,12 @@ img {
 		border-bottom: 2px solid #00a8ff;
 		transition: all 0.2s ease;
 		margin: 0 12px;
-
-		&::placeholder {
+		&+&{
+			@include media((
+				margin-top: (sm: 30px),
+			));
+		}
+		&::placeholder{
 			color: #6d90a1;
 			font-family: $font5;
 			font-size: 14px;
@@ -168,6 +182,10 @@ img {
 		font-size: 14px;
 		font-weight: 300;
 		text-align: center;
+		@include media((
+				width: (md: 380px),
+				font-size: (sm: 13px),
+		));
 	}
 }
 
@@ -186,8 +204,11 @@ img {
 	&__slide {
 		width: 749px;
 		height: 412px;
-
-		img {
+		@include media((
+				width: (sm: 100%),
+				height: (sm: 160px),
+		));
+		img{
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -200,15 +221,16 @@ img {
 		width: 33px;
 		height: 33px;
 		position: absolute;
-		top: 193px;
+		top: 215px;
 		cursor: pointer;
 		background: url("../img/next.svg") center center no-repeat;
 		background-size: contain;
 		opacity: 1;
 		transition: opacity 0.3s ease;
-
-		&::before,
-		&::after {
+		@include media((
+				top: (sm: 85px),
+		));
+		&::before, &::after{
 			display: none;
 		}
 
@@ -238,8 +260,11 @@ img {
 		margin: 29px auto 0;
 		position: static;
 		display: flex;
-
-		.swiper-pagination-bullet {
+		@include media((
+				width: (sm: 100%),
+				margin-top: (sm: 9px),
+		));
+		.swiper-pagination-bullet{
 			width: auto;
 			height: 100%;
 			border-radius: 0;
@@ -262,4 +287,38 @@ img {
 
 .hidden-content {
 	display: none;
+}
+
+
+.social-fixed-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	z-index: 30;
+	right: 0;
+	top: 50%;
+	margin-top: -105px;
+	box-shadow: 0 4px 8px 1px rgba(0, 103, 169, 0.18);
+	border-radius: 36px 0 0 36px;
+	background-color: #ffffff;
+	padding: 46px 22px 46px 28px;
+	@include media((
+				padding: (md: 36px 22px 36px 22px),
+				display: (sm: none),
+	));
+	&__link{
+		display: block;
+		width: 46px;
+		height: 37px;
+		&+&{
+			margin-top: 35px;
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
 }

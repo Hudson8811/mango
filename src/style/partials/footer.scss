@@ -1,9 +1,16 @@
 .footer{
-  padding: 45px 0 65px;
+  padding: 52px 0 65px;
+  @include media((
+          padding: (sm:30px 0 30px),
+  ));
   .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media((
+            flex-wrap: (lg:wrap),
+            flex-direction: (sm:column),
+    ));
     @media all and (min-width: 1200px) {
       max-width: 1202px;
       position: relative;
@@ -26,6 +33,12 @@
     font-weight: 400;
     border-bottom: 1px dashed #000000;
     cursor: pointer;
+    padding-bottom: 4px;
+    margin-top: 7px;
+    @include media((
+            order: (lg:4),
+            margin-top: (lg:25px),
+    ));
     &:hover{
       border-color: transparent;
     }
@@ -35,6 +48,11 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 13px;
+    @include media((
+            order: (lg:5),
+            margin-bottom: (lg:0),
+            margin-top: (lg:25px),
+    ));
     &-label{
       color: #000000;
       font-family: $font4;
@@ -51,6 +69,9 @@
   &__social-block{
     display: flex;
     align-items: center;
+    @include media((
+            margin: (lg:0 40px,md:0,sm:20px 0 0),
+    ));
   }
   &__social-link{
     display: block;
@@ -83,8 +104,16 @@
   &__contacts{
     display: flex;
     align-items: center;
+    @include media((
+            flex-direction: (sm:column),
+            margin-top: (sm:20px),
+    ));
     &-right{
       margin-left: 10px;
+      @include media((
+              margin-left: (sm:0),
+              margin-top: (sm:20px),
+      ));
     }
   }
 }

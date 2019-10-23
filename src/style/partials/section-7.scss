@@ -6,7 +6,7 @@
   .block-title{
     margin-bottom: 55px;
     @include media((
-            margin-bottom: (md:40px),
+            margin-bottom: (md:40px,sm:20px),
     ));
   }
 }
@@ -23,7 +23,11 @@
     position: relative;
     margin-bottom: 2px;
     width: 39%;
-    @include media((height: (lg:300px, md:250px, sm:200px)));
+    @include media((
+            height: (lg:300px, md:250px, sm:200px),
+            width: (sm:100% !important),
+            padding: (sm:20px),
+    ));
     &::before{
       content: "";
       width: 100%;

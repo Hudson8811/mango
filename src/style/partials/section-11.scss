@@ -3,11 +3,17 @@
   padding-bottom: 78px;
   background: url("../images/bg-section-11.jpg") center bottom no-repeat;
   overflow: hidden;
+  @include media((
+          padding-bottom: (sm:48px),
+  ));
 }
 
 .reviews{
   &__block-title{
     margin-bottom: 60px;
+    @include media((
+            margin-bottom: (sm:30px),
+    ));
   }
   &__grid{
     display: flex;
@@ -128,7 +134,7 @@
 .consultation{
   padding-bottom: 251px;
   @include media((
-          padding-bottom: (lg:223px,md:170px),
+          padding-bottom: (lg:223px,md:170px,sm:0),
   ));
   &__main-block{
     padding: 50px 20px 60px;
@@ -160,6 +166,7 @@
               height: (lg:602px,md:455px),
               right: (lg:-57px,md:-40px),
               bottom: (lg:-222px,md:-170px),
+              display: (sm:none),
       ));
     }
   }
@@ -174,6 +181,7 @@
     z-index: 1;
     @include media((
             width: (lg:230px,md:160px),
+            display: (sm:none),
     ));
   }
   &__image-2{
@@ -184,6 +192,7 @@
     z-index: 1;
     @include media((
             width: (lg:210px,md:150px),
+            display: (sm:none),
     ));
   }
 }

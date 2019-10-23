@@ -3,8 +3,8 @@
   padding-bottom: 145px;
   background: url("../images/bg-section-9.jpg") center bottom no-repeat;
   @include media((
-          padding-top: (lg:95px,md:75px),
-          padding-bottom: (lg:105px,md:70px)
+          padding-top: (lg:95px,md:75px,sm:50px),
+          padding-bottom: (lg:105px,md:70px,sm:40px)
   ));
 }
 
@@ -12,13 +12,13 @@
   &__block-title{
     margin-bottom: 75px;
     @include media((
-            margin-bottom: (md:45px),
+            margin-bottom: (md:45px,sm:25px),
     ));
   }
   &__info{
     margin-top: 53px;
     @include media((
-            margin-top: (md:40px),
+            margin-top: (md:40px,sm:30px),
     ));
   }
   &__title{
@@ -29,7 +29,7 @@
     font-style: italic;
     text-align: center;
     @include media((
-            font-size: (md:22px),
+            font-size: (md:22px,sm:16px),
     ));
   }
   &__text{
@@ -42,7 +42,8 @@
     font-weight: 400;
     text-align: center;
     @include media((
-            font-size: (md:15px),
+            font-size: (md:15px,sm:13px),
+            margin-top: (sm:9px),
     ));
   }
 }
@@ -50,7 +51,7 @@
 .organizers{
   margin-top: 240px;
   @include media((
-          margin-top: (lg:130px,md:100px),
+          margin-top: (lg:130px,md:100px,sm:70px),
   ));
   &__block-title{
     margin-bottom: 65px;
@@ -64,7 +65,7 @@
     &+&{
       margin-top: 12px;
       @include media((
-              margin-top: (md:20px),
+              margin-top: (md:30px),
       ));
     }
     &:nth-child(odd){
@@ -141,15 +142,26 @@
     display: flex;
     align-items: center;
     width: 585px;
+    max-width: 100%;
     position: relative;
+    @include media((
+            align-items: (sm:flex-start),
+    ));
   }
   &__img{
     display: block;
     width: 163px;
     min-width: 163px;
+    @include media((
+            width: (sm:60px),
+            min-width: (sm:60px),
+    ));
   }
   &__info{
     margin-left: 28px;
+    @include media((
+            margin-left: (sm:15px),
+    ));
   }
   &__name{
     color: #000000;
@@ -157,6 +169,9 @@
     font-size: 16px;
     font-weight: 700;
     font-style: italic;
+    @include media((
+            font-size: (sm:15px),
+    ));
   }
   &__role{
     color: #000000;
@@ -164,6 +179,9 @@
     font-size: 14px;
     font-style: italic;
     margin-top: 6px;
+    @include media((
+            font-size: (sm:13px),
+    ));
   }
   &__text{
     color: #000000;
@@ -171,5 +189,9 @@
     font-size: 14px;
     font-style: italic;
     margin-top: 23px;
+    @include media((
+            font-size: (sm:13px),
+            margin-top: (sm:13px),
+    ));
   }
 }

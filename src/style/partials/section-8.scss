@@ -6,8 +6,8 @@
   position: relative;
   z-index: 1;
   @include media((
-          padding-top: (lg:120px,md:100px),
-          padding-bottom: (lg:140px,md:80px)
+          padding-top: (lg:120px,md:100px,sm:50px),
+          padding-bottom: (lg:140px,md:80px,sm:40px)
   ));
 }
 

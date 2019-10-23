@@ -81,7 +81,7 @@ img {
 	font-style: italic;
 	text-align: center;
 	@include media((
-			font-size: (md:30px),
+			font-size: (md:30px,sm:20px),
 	));
 }
 .block-subtitle{
@@ -91,7 +91,7 @@ img {
 	font-weight: 700;
 	text-align: center;
 	@include media((
-			font-size: (md:29px),
+			font-size: (md:29px,sm:19px),
 	));
 }
 .callback-form{
@@ -99,6 +99,10 @@ img {
 	&__input-row{
 		display: flex;
 		justify-content: center;
+		@include media((
+				flex-direction: (sm: column),
+				align-items: (sm: center),
+		));
 	}
 	&__input{
 		width: 191px;
@@ -114,6 +118,11 @@ img {
 		border-bottom: 2px solid #00a8ff;
 		transition: all 0.2s ease;
 		margin: 0 12px;
+		&+&{
+			@include media((
+				margin-top: (sm: 30px),
+			));
+		}
 		&::placeholder{
 			color: #6d90a1;
 			font-family: $font5;
@@ -149,6 +158,7 @@ img {
 		text-align: center;
 		@include media((
 				width: (md: 380px),
+				font-size: (sm: 13px),
 		));
 	}
 }
@@ -166,6 +176,10 @@ img {
 	&__slide{
 		width: 749px;
 		height: 412px;
+		@include media((
+				width: (sm: 100%),
+				height: (sm: 160px),
+		));
 		img{
 			display: block;
 			width: 100%;
@@ -184,6 +198,9 @@ img {
 		background-size: contain;
 		opacity: 1;
 		transition: opacity 0.3s ease;
+		@include media((
+				top: (sm: 85px),
+		));
 		&::before, &::after{
 			display: none;
 		}
@@ -210,6 +227,10 @@ img {
 		margin: 29px auto 0;
 		position: static;
 		display: flex;
+		@include media((
+				width: (sm: 100%),
+				margin-top: (sm: 9px),
+		));
 		.swiper-pagination-bullet{
 			width: auto;
 			height: 100%;

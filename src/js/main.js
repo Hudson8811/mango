@@ -9,3 +9,4 @@
 //= partials/main.js
 //= partials/header.js
 //= partials/section-9
+//= partials/section-5

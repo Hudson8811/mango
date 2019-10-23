@@ -1,6 +1,6 @@
 .section-9{
-  padding-top: 105px;
-  padding-bottom: 145px;
+  padding-top: 107px;
+  padding-bottom: 144px;
   background: url("../images/bg-section-9.jpg") center bottom no-repeat;
   @include media((
           padding-top: (lg:95px,md:75px,sm:50px),
@@ -10,13 +10,13 @@
 
 .portfolio{
   &__block-title{
-    margin-bottom: 75px;
+    margin-bottom: 77px;
     @include media((
             margin-bottom: (md:45px,sm:25px),
     ));
   }
   &__info{
-    margin-top: 53px;
+    margin-top: 54px;
     @include media((
             margin-top: (md:40px,sm:30px),
     ));
@@ -35,7 +35,7 @@
   &__text{
     width: 975px;
     max-width: 100%;
-    margin: 16px auto 0;
+    margin: 18px auto 0;
     color: #000000;
     font-family: $font2;
     font-size: 16px;
@@ -49,12 +49,12 @@
 }
 
 .organizers{
-  margin-top: 240px;
+  margin-top: 244px;
   @include media((
           margin-top: (lg:130px,md:100px,sm:70px),
   ));
   &__block-title{
-    margin-bottom: 65px;
+    margin-bottom: 69px;
     @include media((
             margin-bottom: (md:50px),
     ));
@@ -102,7 +102,7 @@
           height: 46px;
           position: absolute;
           left: 243px;
-          top: -81px;
+          top: -48px;
           background: url("../images/bg-org-2.png") center center no-repeat;
           background-size: contain;
           @include media((
@@ -188,10 +188,12 @@
     font-family: $font2;
     font-size: 14px;
     font-style: italic;
-    margin-top: 23px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     @include media((
             font-size: (sm:13px),
             margin-top: (sm:13px),
+            margin-bottom: (md:0),
     ));
   }
 }

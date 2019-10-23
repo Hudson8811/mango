@@ -1,9 +1,11 @@
 var swiperProtfolio = new Swiper('.portfolio .swiper-container', {
+    effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
     breakpoints: {
         0: {
+            effect: 'slide',
             slidesPerView: 1,
             centeredSlides: false,
         },

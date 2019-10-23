@@ -1,6 +1,6 @@
 .section-8{
-  padding-top: 180px;
-  padding-bottom: 200px;
+  padding-top: 184px;
+  padding-bottom: 203px;
   background: url("../images/bg-section-8.jpg") center bottom no-repeat;
   overflow: hidden;
   position: relative;
@@ -37,16 +37,17 @@
   &_type{
     &_big{
       .item-why__img{
-        height: 206px;
+        height: 229px;
         @include media((
                 height: (md:160px),
         ));
       }
       .item-why__label{
         font-size: 22px;
-        margin-top: 9px;
+        margin-top: -19px;
         @include media((
                 font-size: (md:16px),
+                margin-top: (md:1px),
         ));
       }
       .item-why__text{
@@ -64,7 +65,7 @@
       }
       .item-why__label{
         font-size: 16px;
-        margin-top: 9px;
+        margin-top: 1px;
       }
       .item-why__text{
         font-size: 14px;
@@ -88,7 +89,7 @@
     background-size: contain;
   }
   &__block-title{
-    margin-bottom: 85px;
+    margin-bottom: 98px;
   }
   &__row{
     display: flex;
@@ -110,7 +111,7 @@
         }
       }
       &_small{
-        margin-top: 60px;
+        margin-top: 65px;
         position: relative;
         @include media((
                 justify-content: (lg:space-around),

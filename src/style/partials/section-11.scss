@@ -1,5 +1,5 @@
 .section-11{
-  padding-top: 46px;
+  padding-top: 48px;
   padding-bottom: 78px;
   background: url("../images/bg-section-11.jpg") center bottom no-repeat;
   overflow: hidden;
@@ -137,7 +137,7 @@
           padding-bottom: (lg:223px,md:170px,sm:0),
   ));
   &__main-block{
-    padding: 50px 20px 60px;
+    padding: 47px 20px 68px;
     position: relative;
     box-shadow: 0 9px 60px 2px rgba(0, 138, 190, 0.17);
     border-radius: 4px;
@@ -145,11 +145,6 @@
     @include media((
             padding: (md: 30px 20px 40px),
     ));
-    &__block-title{
-      margin-bottom: 10px;
-    }
-    &__block-subtitle{
-    }
     &::before{
       content: "";
       display: block;
@@ -170,8 +165,13 @@
       ));
     }
   }
+  &__block-title{
+    margin-bottom: 12px;
+  }
+  &__block-subtitle{
+  }
   &__callback-form{
-    margin-top: 30px;
+    margin-top: 33px;
   }
   &__image-1{
     display: block;

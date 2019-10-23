@@ -22,8 +22,8 @@
     padding-left: 15px;
     margin-bottom: 30px;
     @include media((
-            flex: (lg:0 0 33.333333%),
-            max-width: (lg:33.333333%),
+            flex: (lg:0 0 33.333333%,md:0 0 50%,sm:0 0 100%),
+            max-width: (lg:33.333333%,md:50%,sm:100%),
     ));
   }
   &__container{
@@ -128,7 +128,7 @@
 .consultation{
   padding-bottom: 251px;
   @include media((
-          padding-bottom: (lg:223px),
+          padding-bottom: (lg:223px,md:170px),
   ));
   &__main-block{
     padding: 50px 20px 60px;
@@ -136,6 +136,9 @@
     box-shadow: 0 9px 60px 2px rgba(0, 138, 190, 0.17);
     border-radius: 4px;
     background-color: #ffffff;
+    @include media((
+            padding: (md: 30px 20px 40px),
+    ));
     &__block-title{
       margin-bottom: 10px;
     }
@@ -153,10 +156,10 @@
       background-size: 100% auto;
       pointer-events: none;
       @include media((
-              width: (lg:945px),
-              height: (lg:602px),
-              right: (lg:-57px),
-              bottom: (lg:-222px),
+              width: (lg:945px,md:715px),
+              height: (lg:602px,md:455px),
+              right: (lg:-57px,md:-40px),
+              bottom: (lg:-222px,md:-170px),
       ));
     }
   }
@@ -170,7 +173,7 @@
     bottom: 0;
     z-index: 1;
     @include media((
-            width: (lg:230px),
+            width: (lg:230px,md:160px),
     ));
   }
   &__image-2{
@@ -180,7 +183,7 @@
     bottom: 0;
     z-index: 1;
     @include media((
-            width: (lg:210px),
+            width: (lg:210px,md:150px),
     ));
   }
 }

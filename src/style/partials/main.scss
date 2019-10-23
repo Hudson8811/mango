@@ -80,6 +80,9 @@ img {
 	font-family: $font2;
 	font-style: italic;
 	text-align: center;
+	@include media((
+			font-size: (md:30px),
+	));
 }
 .block-subtitle{
 	color: #00baff;
@@ -87,6 +90,9 @@ img {
 	font-size: 37px;
 	font-weight: 700;
 	text-align: center;
+	@include media((
+			font-size: (md:29px),
+	));
 }
 .callback-form{
 	margin: 0 auto;
@@ -141,6 +147,9 @@ img {
 		font-size: 14px;
 		font-weight: 300;
 		text-align: center;
+		@include media((
+				width: (md: 380px),
+		));
 	}
 }
 

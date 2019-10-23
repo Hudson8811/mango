@@ -5,7 +5,7 @@
 }
 
 .reviews{
-  .block-title{
+  &__block-title{
     margin-bottom: 60px;
   }
   &__grid{
@@ -123,10 +123,10 @@
     box-shadow: 0 9px 60px 2px rgba(0, 138, 190, 0.17);
     border-radius: 4px;
     background-color: #ffffff;
-    .block-title{
+    &__block-title{
       margin-bottom: 10px;
     }
-    .block-subtitle{
+    &__block-subtitle{
     }
     &::before{
       content: "";

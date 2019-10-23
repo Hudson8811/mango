@@ -1,4 +1,4 @@
-var swiper = new Swiper('.portfolio .swiper-container', {
+var swiperProtfolio = new Swiper('.portfolio .swiper-container', {
     effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',
@@ -18,4 +18,16 @@ var swiper = new Swiper('.portfolio .swiper-container', {
         nextEl: '.portfolio .swiper-button-next',
         prevEl: '.portfolio .swiper-button-prev',
     },
+    on:{
+        init: function () {
+            var slide = $('.portfolio .swiper-slide-active');
+            $('.portfolio__title').html(slide.find('.hidden-content__title').html());
+            $('.portfolio__text').html(slide.find('.hidden-content__text').html());
+        },
+        transitionEnd: function () {
+            var slide = $('.portfolio .swiper-slide-active');
+            $('.portfolio__title').html(slide.find('.hidden-content__title').html());
+            $('.portfolio__text').html(slide.find('.hidden-content__text').html());
+        },
+    }
 });

@@ -7,24 +7,24 @@
 .portfolio{
   &__info{
     margin-top: 53px;
-    &__title{
-      color: #000000;
-      font-family: $font2;
-      font-size: 26px;
-      font-weight: 700;
-      font-style: italic;
-      text-align: center;
-    }
-    &__text{
-      width: 975px;
-      max-width: 100%;
-      margin: 16px auto 0;
-      color: #000000;
-      font-family: $font2;
-      font-size: 16px;
-      font-weight: 400;
-      text-align: center;
-    }
+  }
+  &__title{
+    color: #000000;
+    font-family: $font2;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+  }
+  &__text{
+    width: 975px;
+    max-width: 100%;
+    margin: 16px auto 0;
+    color: #000000;
+    font-family: $font2;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
   }
 }
 
@@ -43,7 +43,7 @@
       justify-content: flex-end;
     }
     &:nth-child(3){
-      .organizers__item__content{
+      .organizers__content{
         &::before{
           content: "";
           display: block;
@@ -58,7 +58,7 @@
       }
     }
     &:nth-child(4){
-      .organizers__item__content{
+      .organizers__content{
         &::before{
           content: "";
           display: block;
@@ -73,7 +73,7 @@
       }
     }
     &:nth-child(5){
-      .organizers__item__content{
+      .organizers__content{
         &::before{
           content: "";
           display: block;
@@ -87,40 +87,40 @@
         }
       }
     }
-    &__content{
-      display: flex;
-      align-items: center;
-      width: 585px;
-      position: relative;
-      &__img{
-        display: block;
-        width: 163px;
-        min-width: 163px;
-      }
-      &__info{
-        margin-left: 28px;
-        &__name{
-          color: #000000;
-          font-family: $font2;
-          font-size: 16px;
-          font-weight: 700;
-          font-style: italic;
-        }
-        &__role{
-          color: #000000;
-          font-family: $font2;
-          font-size: 14px;
-          font-style: italic;
-          margin-top: 6px;
-        }
-        &__text{
-          color: #000000;
-          font-family: $font2;
-          font-size: 14px;
-          font-style: italic;
-          margin-top: 23px;
-        }
-      }
-    }
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    width: 585px;
+    position: relative;
+  }
+  &__img{
+    display: block;
+    width: 163px;
+    min-width: 163px;
+  }
+  &__info{
+    margin-left: 28px;
+  }
+  &__name{
+    color: #000000;
+    font-family: $font2;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+  }
+  &__role{
+    color: #000000;
+    font-family: $font2;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 6px;
+  }
+  &__text{
+    color: #000000;
+    font-family: $font2;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 23px;
   }
 }

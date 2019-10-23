@@ -93,39 +93,39 @@ img {
 	&__input-row{
 		display: flex;
 		justify-content: center;
-		&__input{
-			width: 191px;
-			padding-bottom: 5px;
-			background: transparent;
-			border: none;
+	}
+	&__input{
+		width: 191px;
+		padding-bottom: 5px;
+		background: transparent;
+		border: none;
+		color: #6d90a1;
+		font-family: $font5;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: center;
+		box-shadow: 0 2px 0 rgba(53, 191, 253, 0.33);
+		border-bottom: 2px solid #00a8ff;
+		transition: all 0.2s ease;
+		margin: 0 12px;
+		&::placeholder{
 			color: #6d90a1;
 			font-family: $font5;
 			font-size: 14px;
 			font-weight: 400;
 			text-align: center;
-			box-shadow: 0 2px 0 rgba(53, 191, 253, 0.33);
-			border-bottom: 2px solid #00a8ff;
-			transition: all 0.2s ease;
-			margin: 0 12px;
+		}
+		&:hover,&:focus{
+			outline: none;
+			color: #000000;
+			border-color: #a5e0ff;
 			&::placeholder{
-				color: #6d90a1;
-				font-family: $font5;
-				font-size: 14px;
-				font-weight: 400;
-				text-align: center;
-			}
-			&:hover,&:focus{
-				outline: none;
 				color: #000000;
-				border-color: #a5e0ff;
-				&::placeholder{
-					color: #000000;
-				}
 			}
-			&:valid{
-				box-shadow: 0 2px 0 rgba(138, 169, 184, 0.33);
-				border-color: #6c90a1;
-			}
+		}
+		&:valid{
+			box-shadow: 0 2px 0 rgba(138, 169, 184, 0.33);
+			border-color: #6c90a1;
 		}
 	}
 	&__button{

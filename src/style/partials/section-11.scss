@@ -13,101 +13,102 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    &__item{
-      flex: 0 0 25%;
-      max-width: 25%;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-bottom: 30px;
-      &__container{
-        box-shadow: 0 0 21px 1px rgba(123, 134, 138, 0.21);
-        background-color: #ffffff;
-        &__image{
+  }
+  &__item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+  &__container{
+    box-shadow: 0 0 21px 1px rgba(123, 134, 138, 0.21);
+    background-color: #ffffff;
+  }
+  &__image{
+    display: block;
+    width: 100%;
+    height: 172px;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &_type{
+      &_video{
+        position: relative;
+        &::after{
+          content: "";
+          width: 72px;
+          height: 50px;
           display: block;
-          width: 100%;
-          height: 172px;
-          img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-          &_type{
-            &_video{
-              position: relative;
-              &::after{
-                content: "";
-                width: 72px;
-                height: 50px;
-                display: block;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-left: -36px;
-                margin-top: -25px;
-                background: url("../img/you.svg") center center no-repeat;
-                background-size: contain;
-              }
-            }
-          }
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -36px;
+          margin-top: -25px;
+          background: url("../img/you.svg") center center no-repeat;
+          background-size: contain;
         }
-        &__content{
-          display: block;
-          width: 100%;
-          padding: 30px 20px 30px 30px;
-          &__name{
-            color: #000000;
-            font-family: $font2;
-            font-size: 18px;
-            font-weight: 700;
-          }
-          &__role{
-            color: #a1a1a1;
-            font-family: $font2;
-            font-size: 14px;
-            font-weight: 400;
-            margin-top: 5px;
-          }
-          &__text{
-            height: 98px;
-            color: #000000;
-            font-family: $font2;
-            font-size: 14px;
-            font-weight: 400;
-            overflow: hidden;
-            margin-top: 23px;
-          }
-          &__link{
-            display: flex;
-            align-items: center;
-            margin-top: 24px;
-            img{
-              width: 21px;
-              min-width: 21px;
-              display: block;
-              margin-right: 12px;
-            }
-            span{
-              color: #89b2cc;
-              font-family: $font2;
-              font-size: 12px;
-              font-weight: 700;
-              position: relative;
-              overflow: hidden;
-              &::after{
-                content: "";
-                display: block;
-                height: 100%;
-                width: 66px;
-                position: absolute;
-                right: 0;
-                top: 0;
-                background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
-              }
-            }
-          }
-        }
+      }
+    }
+  }
+  &__content{
+    display: block;
+    width: 100%;
+    padding: 30px 20px 30px 30px;
+
+  }
+  &__name{
+    color: #000000;
+    font-family: $font2;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__role{
+    color: #a1a1a1;
+    font-family: $font2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  &__text{
+    height: 98px;
+    color: #000000;
+    font-family: $font2;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    margin-top: 23px;
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    img{
+      width: 21px;
+      min-width: 21px;
+      display: block;
+      margin-right: 12px;
+    }
+    span{
+      color: #89b2cc;
+      font-family: $font2;
+      font-size: 12px;
+      font-weight: 700;
+      position: relative;
+      overflow: hidden;
+      &::after{
+        content: "";
+        display: block;
+        height: 100%;
+        width: 66px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
       }
     }
   }
@@ -127,23 +128,6 @@
     }
     .block-subtitle{
     }
-    &__form{
-      margin-top: 30px;
-    }
-    &__image-1{
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: 1;
-    }
-    &__image-2{
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-    }
     &::before{
       content: "";
       display: block;
@@ -156,5 +140,22 @@
       background-size: 100% 100%;
       pointer-events: none;
     }
+  }
+  &__callback-form{
+    margin-top: 30px;
+  }
+  &__image-1{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__image-2{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 }

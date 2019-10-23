@@ -1,0 +1,119 @@
+.section-5 {
+    background: url('../images/bg-s-5.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: 1920px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+
+    padding-bottom: 400px;
+}
+
+.gifts-card {
+    background: url('../images/s5-card-bg.jpg') no-repeat center center;
+    background-size: cover;
+    width: 975px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 53px 15px 68px;
+    text-align: center;
+    position: relative;
+
+    &__title {
+        color: #000000;
+        font-family: "DejaVu Serif";
+        font-size: 36px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    &__line-1 {
+        color: #00baff;
+        font-family: "PT Serif Pro";
+        font-size: 37px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    &__line-2 {
+        font-family: "PT Serif Pro";
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: -6px;
+    }
+
+    &__decoration {
+        position: absolute;
+
+        &--1 {
+            left: 0;
+            top: 25px;
+            transform: translateX(-100%);
+        }
+
+
+        &--2 {
+            left: 11%;
+            bottom: 0;
+            transform: translate(0%, 100%);
+            width: 70%;
+        }
+
+        &--3 {
+            right: 8%;
+            bottom: 10%;
+            width: 27%;
+            transform: translate(50%, 50%);
+        }
+    }
+}
+
+.s3-cf--section-5 {
+    .s3-cf {
+        &__input-row {
+            margin-top: 37px;
+        }
+
+        &__bottom {}
+
+        .callback-form__input {
+            &--s3-cf {}
+        }
+
+        .btn {}
+
+
+        .s3-cf__desc {}
+    }
+}
+
+
+@media screen and (max-width:850px) {
+
+    .gifts-card__decoration {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .gifts-card__title {
+        font-size: 27px;
+    }
+
+    .gifts-card__line-1 {
+        font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gifts-card__title {
+        font-size: 22px;
+    }
+
+    .gifts-card__line-1 {
+        font-size: 22px;
+        margin-top: 6px;
+        margin-bottom: 11px;
+    }
+}

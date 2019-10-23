@@ -115,10 +115,88 @@
 
         &__center {
             margin-top: 10px;
+
             img {
                 width: 200px;
             }
         }
     }
 
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-2__text-1 {
+
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .section-2__text-2 {
+        font-size: 18px;
+    }
+
+    .s2-fb {
+        margin-top: 60px;
+    }
+
+    .s2-fb__title {
+        font-size: 26px;
+    }
+
+    .s2-fb__old-price {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .s2-fb__new-pice {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-2 {
+        margin-top: -70px;
+        background: #fff;
+        border-radius: 22px;
+        position: relative;
+        z-index: 2;
+        padding-top: 15px;
+
+        &__text-1 {
+            font-size: 22px;
+        }
+
+        &__text-2 {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+    }
+
+    .s2-fb__title {
+        font-size: 20px;
+    }
+
+    .s2-fb__left,
+    .s2-fb__right {
+        padding-top: 25px;
+    }
+
+    .s2-fb__new-pice {
+        font-size: 24px;
+    }
+
+    .s2-fb__old-price {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .s2-fb__center img {
+        width: 78px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .section-2 {
+        margin-top: -230px;
+    }
 }

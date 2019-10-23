@@ -19,7 +19,7 @@
 
 .s1-text-1 {
     text-shadow: -1px 3px 0 rgba(0, 0, 0, 0.15);
-    font-family: "Deja Vu Serif";
+    font-family: "DejaVu Serif";
     color: #ff781e;
     font-size: 44px;
     font-style: italic;
@@ -32,7 +32,7 @@
     font-size: 24px;
     font-style: italic;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .s1-decoration-1 {
@@ -55,9 +55,10 @@
 
     &__decoration-1 {
         position: absolute;
-        bottom: -100px;
+        bottom: -114px;
         left: calc(100% - 67px);
-        max-width: 850px;
+        max-width: 920px;
+
     }
 
     &__decoration-2 {
@@ -97,7 +98,7 @@
         font-size: 17px;
         font-weight: 800;
         text-align: center;
-        margin-top: 46px;
+        margin-top: 40px;
         margin-bottom: 59px;
     }
 

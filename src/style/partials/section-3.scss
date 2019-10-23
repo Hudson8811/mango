@@ -17,6 +17,7 @@
         font-style: italic;
         text-align: center;
         width: 920px;
+        max-width: 100%;
         margin: 0 auto;
     }
 }
@@ -48,8 +49,7 @@
 
     input {}
 
-    .btn {
-    }
+    .btn {}
 
     .s3-cf__desc {
         color: #000000;
@@ -57,11 +57,52 @@
         font-size: 14px;
         font-weight: 300;
         width: 500px;
+        max-width: 100%;
         margin-top: 24px;
     }
 
 }
-.callback-form__input:focus{
+
+.callback-form__input:focus {
     box-shadow: 0 2px 0 rgba(53, 191, 253, 0.33);
     border-color: #00a8ff;
+}
+
+@media only screen and (max-width: 1199px) {
+    .section-3__title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .section-3__title {
+        font-size: 35px;
+    }
+
+    .section-3 {
+        margin: -175px auto 0;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .callback-form__input--s3-cf{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-3__title {
+
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .section-3__title {}
+}
+
+@media only screen and (max-width: 420px) {
+    .section-3 {
+        margin: -63px auto 0;
+    }
 }

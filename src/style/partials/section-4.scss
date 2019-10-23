@@ -1,0 +1,107 @@
+.section-4 {
+    text-align: center;
+    margin-top: 13px;
+
+    &__title {
+        font-family: "DejaVu Serif";
+        font-size: 44px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    &__text-2 {
+        color: #000000;
+        font-family: "DejaVu Serif";
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 18px;
+    }
+
+    .we-know-block {
+        margin-top: 19px;
+        width: 100%;
+        position: relative;
+        padding-top: 500px;
+
+        .wk-item {
+            &__img {}
+
+            width: 220px;
+
+            &__title {
+                font-family: "PT Serif Pro";
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            &__desc {
+                font-family: "PT Serif Pro";
+                font-size: 14px;
+            }
+
+            position: absolute;
+
+            &--1 {
+                left: -1.7%;
+                top: 55%;
+
+                .wk-item__title {
+                    margin-top: 22px;
+                }
+            }
+
+            &--2 {
+                left: 27%;
+                top: 18%;
+
+                .wk-item__title {
+                    margin-top: 39px;
+                }
+
+            }
+
+            &--3 {
+                left: 57%;
+                top: 19%;
+
+                .wk-item__title {
+                    margin-top: 14px;
+                }
+
+            }
+
+            &--4 {
+                left: 82.5%;
+                top: 60%;
+
+                .wk-item__title {
+                    margin-top: 17px;
+                }
+            }
+        }
+
+        .wk-trace {
+            position: absolute;
+
+            &--1 {
+                left: 14%;
+                top: 40%;
+            }
+
+            &--2 {
+                left: 45%;
+                top: 32%;
+            }
+
+            &--3 {
+                left: 73%;
+                top: 41%;
+            }
+        }
+    }
+}
+
+
+.wk-big-pic {
+    margin-top: -162px;
+}

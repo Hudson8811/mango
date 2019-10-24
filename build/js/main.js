@@ -21,7 +21,10 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 $(document).ready(function() {
     $('.fancybox-btn').fancybox({
-        modal : true,
+        clickOutside: "close",
+        smallBtn: false,
+        buttons: false,
+        touch:false
     });
 
     $('.modal-block__close').click(function () {

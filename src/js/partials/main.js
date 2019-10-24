@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $('.fancybox-btn').fancybox({
-        modal : true,
+        clickOutside: "close",
+        smallBtn: false,
+        buttons: false,
+        touch:false
     });
 
     $('.modal-block__close').click(function () {

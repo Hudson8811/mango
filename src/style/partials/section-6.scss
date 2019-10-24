@@ -19,9 +19,9 @@
   &__types{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 146px;
+    margin-bottom: 126px;
     @include media((
-            margin-bottom: (md:60px,sm:30px),
+            margin-bottom: (md:40px,sm:10px),
             flex-direction: (md:column),
             align-items: (md:center),
     ));

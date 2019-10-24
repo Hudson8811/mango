@@ -322,3 +322,88 @@ img {
 		}
 	}
 }
+
+
+.multi-slider {
+	position: relative;
+
+	&__container {
+		width: 1100px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	&__wrapper {}
+
+	&__slide {
+		text-align: center;
+	}
+	&__img{
+		display: flex;
+		height: 269px;
+		justify-content: center;
+		align-items: center;
+		img{
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__label{
+		margin-top: 49px;
+		color: #000000;
+		font-family: $font2;
+		font-size: 18px;
+		font-weight: 700;
+		font-style: italic;
+	}
+	&__more{
+		display: inline-block;
+		padding-bottom: 1px;
+		margin-top: 10px;
+		color: #7c7c7c;
+		font-family: $font1;
+		font-size: 16px;
+		font-weight: 500;
+		border-bottom: 1px dashed #7c7c7c;
+		&:hover{
+			color: #5d5eb7;
+			border-color: #5d5eb7;
+		}
+	}
+
+	&__button {
+		display: block;
+		width: 33px;
+		height: 33px;
+		position: absolute;
+		top: 173px;
+		cursor: pointer;
+		background: url("../img/next.svg") center center no-repeat;
+		background-size: contain;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+		&::before, &::after{
+			display: none;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&_type {
+			&_prev {
+				transform: scale(-1, 1);
+				left: 0
+			}
+
+			&_next {
+				right: 0
+			}
+		}
+	}
+}

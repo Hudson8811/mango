@@ -23,3 +23,13 @@ $(document).ready(function() {
        });
     });
 });
+
+var d = new Date();
+
+var monthJs = d.getMonth()+1;
+var dayJs = d.getDate();
+if (dayJs > 30) monthJs++;
+if (monthJs > 12) monthJs = 1;
+if (monthJs == 4) {dayJs = "28"} else {dayJs = "30"}
+var output = dayJs+'.'+(monthJs<10 ? '0' : '') + monthJs;
+$('#dateJs').html(output);

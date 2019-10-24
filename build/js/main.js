@@ -19,7 +19,12 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 /* my scripts */
 
-
+$(document).ready(function() {
+    $('.footer').fancybox({
+        src  : '#callback-form',
+        modal : true,
+    });
+});
 //header
 var burger = $('.sh-burger');
 var hMenu = $('.sh-menu');

@@ -60,9 +60,9 @@ img {
 	border-radius: 63% 8% 44% 10%/86% 23% 88% 24%;
 	background: #da1f8d;
 	box-shadow: 0 26px 46px rgba(0, 0, 0, 0.24), 0 3px 0 #952165;
-	font-family: $font6;
+	font-family: $font5;
 	color: #ffffff;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	border: none;
 	cursor: pointer;
@@ -138,6 +138,10 @@ img {
 		border-bottom: 2px solid #00a8ff;
 		transition: all 0.2s ease;
 		margin: 0 12px;
+		@include media((
+				margin: (sm: 0),
+				width: (sm: 100%),
+		));
 		&+&{
 			@include media((
 				margin-top: (sm: 30px),
@@ -171,6 +175,8 @@ img {
 	&__button {
 		margin: 30px auto 0;
 		width: 198px;
+		font-family: $font6;
+		font-size: 12px;
 	}
 
 	&__info {

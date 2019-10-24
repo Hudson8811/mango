@@ -31,6 +31,11 @@
             flex: (lg:0 0 33.333333%,md:0 0 50%,sm:0 0 100%),
             max-width: (lg:33.333333%,md:50%,sm:100%),
     ));
+    &:nth-child(n+4){
+      @include media((
+              display: (sm:none),
+      ));
+    }
   }
   &__container{
     box-shadow: 0 0 21px 1px rgba(123, 134, 138, 0.21);
@@ -127,6 +132,14 @@
         color: #4f6674;
       }
     }
+  }
+
+  &__see-all{
+    display: none;
+    margin: 0 auto 30px;
+    @include media((
+            display: (sm:flex),
+    ));
   }
 }
 

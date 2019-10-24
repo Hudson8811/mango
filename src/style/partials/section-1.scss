@@ -104,6 +104,8 @@
 
     .btn {
         margin: 0 auto;
+        width: 236px;
+        height: 67px;
     }
 
 }
@@ -149,6 +151,11 @@
     .s1-card__decoration-1 {
         bottom: -45px;
         max-width: 47vw;
+    }
+    .s1-text-1 {
+        br{
+            display: none;
+        }
     }
 }
 

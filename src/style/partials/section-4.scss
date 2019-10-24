@@ -119,7 +119,7 @@
 
 @media only screen and (max-width: 1199px) {
     .section-4__title {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -199,8 +199,15 @@
     }
 
     .section-4__title {
-        font-size: 27px;
+        font-size: 20px;
     }
+    .section-4__text-2 {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .section-4{margin-top: 53px;}
+
     .we-know-block {
         margin-top: 30px;
         padding-top: 0;
@@ -209,19 +216,5 @@
     }
     .wk-big-pic{
         display: none;
-    }
-}
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-    .section-4__title {
-        font-size: 22px;
-    }
-    .section-4__text-2 {
-        font-size: 14px;
-        margin-top: 16px;
     }
 }

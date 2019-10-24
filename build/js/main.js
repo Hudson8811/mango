@@ -67,6 +67,13 @@ $(window).resize(function () {
 
 });
 
+var links = [];
+
+$('.sh-menu__link').each(function (i) {
+    links[i] = $(this).attr('href');
+});
+
+
 var header = $('#masthead');
 $(window).scroll(function () {
     if ($(document).scrollTop() == 0) {
@@ -75,9 +82,24 @@ $(window).scroll(function () {
     else {
         header.addClass('site-header--scrolled');
     }
+
+    var scrollDistance = $(window).scrollTop();
+    $.each(links,function(index,value){
+        if ($(value).position().top <= scrollDistance + 200) {
+            $('.sh-menu__link--active').removeClass('sh-menu__link--active');
+            $('.sh-menu__link').eq(index).addClass('sh-menu__link--active');
+        }
+    });
 });
 
-
+$(document).ready(function(){
+    $(".sh-menu__link").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 80;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
     //end header
 var swiperProtfolio = new Swiper('.portfolio .swiper-container', {
     effect: 'coverflow',

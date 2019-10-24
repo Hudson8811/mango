@@ -38,8 +38,12 @@
     }
   }
   &__container{
-    box-shadow: 0 0 21px 1px rgba(123, 134, 138, 0.21);
+    box-shadow: 0 9px 60px 2px rgba(0, 138, 190, 0.17);
     background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+    &:hover{
+      box-shadow: 0 0 21px 1px rgba(123, 134, 138, 0.21);
+    }
   }
   &__image{
     display: block;

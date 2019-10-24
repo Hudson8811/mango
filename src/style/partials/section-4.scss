@@ -21,7 +21,7 @@
 }
 
 .we-know-block {
-    margin-top: 19px;
+    margin-top: 26px;
     width: 100%;
     position: relative;
     padding-top: 500px;
@@ -98,8 +98,8 @@
     position: absolute;
 
     &--1 {
-        left: 14%;
-        top: 40%;
+        left: 13%;
+        top: 39%;
     }
 
     &--2 {
@@ -108,13 +108,17 @@
     }
 
     &--3 {
-        left: 73%;
-        top: 41%;
+        left: 72%;
+        top: 40%;
     }
 }
 
 .wk-big-pic {
-    margin-top: -162px;
+    margin-top: -148px;
+    margin-left: 110px;
+    @include media((
+            margin-left: (lg:0),
+    ));
 }
 
 @media only screen and (max-width: 1199px) {

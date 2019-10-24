@@ -42,8 +42,11 @@
     bottom: 0;
 }
 
+.section-1-bg{
+    max-width: none;
+}
+
 .s1-card {
-    position: absolute;
     box-shadow: 0 4px 8px 1px rgba(0, 103, 169, 0.18);
     border-radius: 4px;
     background-color: #ffffff;
@@ -55,7 +58,7 @@
 
     &__decoration-1 {
         position: absolute;
-        bottom: -114px;
+        bottom: -102px;
         left: calc(100% - 67px);
         max-width: 920px;
 
@@ -63,8 +66,8 @@
 
     &__decoration-2 {
         position: absolute;
-        bottom: -57px;
-        left: -120px;
+        bottom: -52px;
+        left: -116px;
 
     }
 

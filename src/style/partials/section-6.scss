@@ -1,9 +1,9 @@
 .section-6{
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 67px;
   @include media((
           padding-top: (md:60px,sm:50px),
-          padding-bottom: (md:70px,sm:50px),
+          padding-bottom: (md:60px,sm:50px),
   ));
 }
 

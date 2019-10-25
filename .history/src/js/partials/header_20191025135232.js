@@ -77,8 +77,7 @@ $(window).scroll(function () {
                 $('.sh-menu__link').eq(index).addClass('sh-menu__link--active');
             }
         });
-    }
-});
+    });
 
 $(document).ready(function () {
     $(".sh-menu__link").on("click", function (event) {

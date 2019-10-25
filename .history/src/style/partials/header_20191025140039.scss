@@ -274,7 +274,10 @@
 }
 
 @media screen and (max-width:815px) {
+    .sh-menu {
+        border-radius: 0;
 
+    }
 
     .sh-contacts {
         display: none;

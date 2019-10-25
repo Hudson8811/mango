@@ -149,12 +149,15 @@ $(window).scroll(function () {
 
     var scrollDistance = $(window).scrollTop();
     if (!burger.is(':visible')) {
+        var showed = false;
         $.each(links, function (index, value) {
             if ($(value).position().top <= scrollDistance + 200) {
                 $('.sh-menu__link--active').removeClass('sh-menu__link--active');
                 $('.sh-menu__link').eq(index).addClass('sh-menu__link--active');
+                showed = true;
             }
         });
+        if (!showed) $('.sh-menu__link--active').removeClass('sh-menu__link--active');
     }
 });
 

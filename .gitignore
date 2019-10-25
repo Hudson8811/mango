@@ -105,3 +105,5 @@ public
 .idea/vcs.xml
 .idea/webResources.xml
 .idea/workspace.xml
+#Бэкапы vs code
+history/

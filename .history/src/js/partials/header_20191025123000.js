@@ -24,14 +24,16 @@ burger.on('click', function (e) {
             setTimeout(function () {
                 hMenu.stop().slideUp(200);
             }, 150);
+
         }
         else {
+
             $(this).addClass('sh-burger--active');
             hMenu.stop().slideDown(200);
             setTimeout(function () {
-                hContacts.stop().fadeIn(200/*, function () {
+                hContacts.stop().fadeIn(200, function () {
                     $(this).css('display', 'flex');
-                }*/);
+                });
             }, 200);
 
         }
@@ -42,7 +44,6 @@ burger.on('click', function (e) {
 $(window).resize(function () {
     if (!burger.is(':visible')) {
         hMenu.attr('style', '');
-        hContacts.attr('style', '');
     }
     if (!hMenu.is(':visible')) {
         burger.removeClass('sh-burger--active');

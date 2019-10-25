@@ -29,9 +29,9 @@ burger.on('click', function (e) {
             $(this).addClass('sh-burger--active');
             hMenu.stop().slideDown(200);
             setTimeout(function () {
-                hContacts.stop().fadeIn(200/*, function () {
+                hContacts.stop().fadeIn(200, function () {
                     $(this).css('display', 'flex');
-                }*/);
+                });
             }, 200);
 
         }

@@ -5,39 +5,26 @@ var hContacts = $('.sh-contacts');
 
 burger.on('click', function (e) {
     e.preventDefault();
-    if ($(window).width() > 815) {
-        if (hMenu.is(':visible')) {
-            $(this).removeClass('sh-burger--active');
+
+    if (hMenu.is(':visible')) {
+        $(this).removeClass('sh-burger--active');
+        hContacts.stop().fadeOut(200);
+        setTimeout(function () {
             hMenu.stop().slideUp(200);
-        }
-        else {
+        }, 200);
 
-            $(this).addClass('sh-burger--active');
-            hMenu.stop().slideDown(200);
-        }
     }
+    else {
 
-    if ($(window).width() <= 815) {
-        if (hMenu.is(':visible')) {
-            $(this).removeClass('sh-burger--active');
-            hContacts.stop().fadeOut(200);
-            setTimeout(function () {
-                hMenu.stop().slideUp(200);
-            }, 150);
-        }
-        else {
-            $(this).addClass('sh-burger--active');
-            hMenu.stop().slideDown(200);
-            setTimeout(function () {
-                hContacts.stop().fadeIn(200/*, function () {
-                    $(this).css('display', 'flex');
-                }*/);
-            }, 200);
+        $(this).addClass('sh-burger--active');
+        hMenu.stop().slideDown(200);
+        setTimeout(function () {
+            hContacts.stop().fadeIn(200, function () {
+                $(this).css('display', 'flex');
+            });
+        }, 200);
 
-        }
     }
-
-
 });
 $(window).resize(function () {
     if (!burger.is(':visible')) {

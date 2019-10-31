@@ -29,6 +29,9 @@
     padding-left: 15px;
     margin-bottom: 30px;
     @include media((
+            height: (sm:auto),
+    ));
+    @include media((
             flex: (lg:0 0 33.333333%,md:0 0 50%,sm:0 0 100%),
             max-width: (lg:33.333333%,md:50%,sm:100%),
     ));
@@ -92,6 +95,9 @@
     max-height: 21px;
     position: relative;
     overflow: hidden;
+    @include media((
+            max-height: (sm:none),
+    ));
   }
   &__role{
     color: #a1a1a1;
@@ -102,6 +108,9 @@
     max-height: 16px;
     position: relative;
     overflow: hidden;
+    @include media((
+            max-height: (sm:none),
+    ));
   }
   &__text{
     max-height: 98px;
@@ -111,6 +120,9 @@
     font-weight: 400;
     overflow: hidden;
     margin-top: 23px;
+    @include media((
+            max-height: (sm:none),
+    ));
   }
   &__link{
     display: flex;

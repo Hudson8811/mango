@@ -5,6 +5,9 @@ $(document).ready(function() {
     });
 
 
+});
+
+$(window).on('load',function () {
     var collapsedHeightName = $('.reviews__name').css('maxHeight');
     var collapsedHeightRole = $('.reviews__role').css('maxHeight');
     var collapsedHeightText = $('.reviews__text').css('maxHeight');
@@ -29,6 +32,9 @@ $(document).ready(function() {
             $rRole = $(this).find('.reviews__role').eq(0),
             $rText = $(this).find('.reviews__text').eq(0),
             duration = 250;
+
+        console.log($rText.data('natural'));
+        console.log(collapsedHeightText);
         if ($rName.data('natural') > parseInt(collapsedHeightName)) $rName.animate({'maxHeight': $rName.data('natural')}, duration);
         if ($rRole.data('natural') > parseInt(collapsedHeightRole)) $rRole.animate({'maxHeight': $rRole.data('natural')}, duration);
         if ($rText.data('natural') > parseInt(collapsedHeightText)) $rText.animate({'maxHeight': $rText.data('natural')}, duration);

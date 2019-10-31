@@ -252,10 +252,9 @@ $(document).ready(function() {
             $rRole = $(this).find('.reviews__role').eq(0),
             $rText = $(this).find('.reviews__text').eq(0),
             duration = 250;
-
-        $rName.animate({'maxHeight': $rName.data('natural')}, duration);
-        $rRole.animate({'maxHeight': $rRole.data('natural')}, duration);
-        $rText.animate({'maxHeight': $rText.data('natural')}, duration);
+        if ($rName.data('natural') > parseInt(collapsedHeightName)) $rName.animate({'maxHeight': $rName.data('natural')}, duration);
+        if ($rRole.data('natural') > parseInt(collapsedHeightRole)) $rRole.animate({'maxHeight': $rRole.data('natural')}, duration);
+        if ($rText.data('natural') > parseInt(collapsedHeightText)) $rText.animate({'maxHeight': $rText.data('natural')}, duration);
         $(this).animate({'zIndex': 1}, 0);
     },function () {
         var $rName = $(this).find('.reviews__name').eq(0),

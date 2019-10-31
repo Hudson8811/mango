@@ -39,9 +39,6 @@
     }
     &:hover{
       z-index: 1;
-      .reviews__name, .reviews__role, .reviews__text{
-        max-height: none;
-      }
     }
   }
   &__container{
